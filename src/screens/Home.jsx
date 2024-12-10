@@ -2,6 +2,8 @@ import React from 'react'
 import Dropdown from '../components/Dropdown'
 import { useNavigate } from 'react-router-dom'
 import { CITIES } from '../constants/constant';
+import HeroImage from '../../src/assets/heroImage.svg'
+
 
 const Home = () => {
     const navigate = useNavigate();
@@ -11,7 +13,7 @@ const Home = () => {
     return (
         <>
             <div className='pt-10'>
-                <img src="../src/assets/heroImage.svg" alt="heroImg" className='mix-blend-darken max-[400px] w-[60%] mx-auto aspect-square' />
+                <img src={HeroImage} alt="heroImg" className='mix-blend-darken max-[400px] w-[60%] mx-auto aspect-square' />
                 <h1 className='w-full text-center text-purple'>Your Basic Information</h1>
                 <div className='flex flex-col gap-5 pt-10'>
                     <input type="text" className='rounded-lg h-[64px] ps-4' placeholder='Enter your name' />

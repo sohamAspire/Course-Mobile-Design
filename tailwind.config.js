@@ -12,7 +12,6 @@ export default {
         'pink' : '#C56EFD'
       },
       backgroundImage: {
-        'theme': "url('./src/assets/background.svg')",
         'pass': "url('./src/assets/classes/passBG.svg')",
       },
       fontFamily: {

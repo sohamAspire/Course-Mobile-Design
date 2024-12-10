@@ -3,6 +3,7 @@ import { MONTHS, SECTION_3_TOGGLE_OPTIONS, YEARS } from '../constants/constant'
 import { useNavigate } from 'react-router-dom'
 import Dropdown from './Dropdown'
 import DateScroller from './DateScroller'
+import HeroImage from '../../src/assets/section3Images/heroImage.svg'
 
 const Section3 = () => {
     const navigate = useNavigate()
@@ -19,7 +20,7 @@ const Section3 = () => {
     return (
         <>
             <div className='pt-10'>
-                <img src="../src/assets/section3Images/heroImage.svg" alt="heroImg2" className='mix-blend-darken max-w-[200px] w-[70%] mx-auto aspect-square' />
+                <img src={HeroImage} alt="heroImg2" className='mix-blend-darken max-w-[200px] w-[70%] mx-auto aspect-square' />
                 <h1 className='text-center text-purple'>Help Us to Customize Your Course!</h1>
                 <div className="flex items-center justify-center pt-6">
                     <div className="relative flex items-center bg-[#C56EFD1A]/20 p-2 rounded-md w-full h-[100px]">

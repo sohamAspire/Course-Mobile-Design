@@ -5,6 +5,7 @@ import Book from '../assets/classes/book.svg'
 import ClipBoard from '../assets/classes/clipboard.svg'
 import Lock from '../assets/classes/lock.svg'
 import Pass from '../assets/classes/pass.svg'
+import PassBG from '../../src/assets/classes/passBG.svg'
 import { CLASSES_SECTION, DISABLED_CONTENT, EXTRA_CONTENT } from '../constants/constant'
 
 
@@ -66,7 +67,7 @@ const Classes = () => {
                     })}
                 </div>
 
-                <div className="mt-4 flex items-center justify-between flex-row bg-pass gap-2 bg-cover py-5 rounded-[16px] overflow-hidden">
+                <div className={`mt-4 flex items-center justify-between flex-row bg-['${PassBG}'] gap-2 bg-cover py-5 rounded-[16px] overflow-hidden`}>
                     <img src={Pass} alt="pass" className='w-[90px] aspect-square' />
                     <div className='w-full flex flex-col text-white gap-1'>
                         <span className='text-[19px] font-600 leading-[20px]'>Get 36 Weekly Classes Access!!</span>

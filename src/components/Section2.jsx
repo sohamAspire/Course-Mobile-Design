@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { SECTION_2_CONTENT, SECTIONS } from '../constants/constant'
 import { useNavigate } from 'react-router-dom'
-
+import HeroImage from '../../src/assets/section2Images/heroImage.svg'
 const Section2 = () => {
     const navigate = useNavigate()
-    const [active , setActive] = useState('')
+    const [active, setActive] = useState('')
 
     const handleSubmit = () => {
         navigate(`/other-info?title=${SECTIONS.section2}`);
@@ -13,7 +13,7 @@ const Section2 = () => {
     return (
         <>
             <div className='pt-10'>
-                <img src="../src/assets/section2Images/heroImage.svg" alt="heroImg2" className='mix-blend-darken max-w-[400px] w-[60%] mx-auto aspect-square' />
+                <img src={HeroImage} alt="heroImg2" className='mix-blend-darken max-w-[400px] w-[60%] mx-auto aspect-square' />
                 <h1 className='text-center text-purple'>Help Us to Know You Better!</h1>
                 <div className='flex flex-wrap justify-between gap-4 pt-6 pb-2'>
                     {SECTION_2_CONTENT.map((content, idx) => {
