@@ -24,7 +24,7 @@ const Home = () => {
 
             <div className="flex flex-col items-center">
                 <label className="flex items-start">
-                    <input type="checkbox" className="appearance-none w-8 aspect-square rounded-md mr-2 mt-[2px] border-2 border-black/20 checked:bg-white checked:border-black/20 checked:icon-black flex items-center justify-center" />
+                    <input type="checkbox" className="appearance-none w-9 aspect-square rounded-md mr-2 mt-[2px] border-2 border-black/20 checked:bg-white checked:border-black/20 checked:icon-black flex items-center justify-center" />
                     <p>
                         I agree to Dream Child Life Science LLP Terms & Conditions and Privacy Policy
                     </p>

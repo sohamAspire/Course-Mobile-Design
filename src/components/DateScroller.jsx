@@ -48,8 +48,8 @@ const DateScroller = () => {
             >
                 {/* For Adding space for the first and last */}
                 {['', ...dates, ''].map((item) => (
-                    <div className="flex flex-col items-center gap-2">
-                        <div key={item.date} className={`flex-shrink-0 w-20 h-20 flex justify-center items-center rounded-full text-[34px] font-500 ${item.date === activeDate ? "border-2 border-pink text-black font-bold" : "bg-transparent text-gray-600"}`}
+                    <div className="flex flex-col items-center gap-2" key={item.date}>
+                        <div className={`flex-shrink-0 w-20 h-20 flex justify-center items-center rounded-full text-[34px] font-500 ${item.date === activeDate ? "border-2 border-pink text-pink font-bold" : "bg-transparent text-gray-600"}`}
                             style={{
                                 scrollSnapAlign: "center",
                                 transition: "opacity 0.3s ease, transform 0.3s ease",
@@ -58,7 +58,7 @@ const DateScroller = () => {
                         >
                             {item.date}
                         </div>
-                        <span>{item.day}</span>
+                        <span className={item.date == activeDate ? "text-pink" : "text-gray-600"}>{item.day}</span>
                     </div>
                 ))}
             </div>

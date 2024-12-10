@@ -25,9 +25,9 @@ const Section3 = () => {
                 <div className="flex items-center justify-center pt-6">
                     <div className="relative flex items-center bg-[#C56EFD1A]/20 p-2 rounded-md w-full h-[100px]">
                         <div className={`absolute top-0 left-0 scale-90 h-full shadow-lg w-1/2 bg-white border-[2px] border-pink rounded-md transform transition-transform duration-300 ${active == SECTION_3_TOGGLE_OPTIONS[0] ? "translate-x-0" : "translate-x-full"}`}></div>
-                        {SECTION_3_TOGGLE_OPTIONS.map((option) => {
+                        {SECTION_3_TOGGLE_OPTIONS.map((option, idx) => {
                             return (
-                                <button onClick={() => toggleOption(option)} className={`z-10 flex-1 text-center px-6 py-2 rounded-full transition-colors duration-300 ${option === active ? "text-black" : "text-[#242424B2]/70"}`}>
+                                <button key={idx} onClick={() => toggleOption(option)} className={`z-10 flex-1 text-center px-6 py-2 rounded-full transition-colors duration-300 ${option === active ? "text-black" : "text-[#242424B2]/70"}`}>
                                     {option}
                                 </button>)
                         })}
