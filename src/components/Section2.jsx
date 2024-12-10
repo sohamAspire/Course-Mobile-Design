@@ -15,7 +15,7 @@ const Section2 = () => {
             <div className='pt-10'>
                 <img src="../src/assets/section2Images/heroImage.svg" alt="heroImg2" className='mix-blend-darken max-w-[400px] w-[60%] mx-auto aspect-square' />
                 <h1 className='text-center text-purple'>Help Us to Know You Better!</h1>
-                <div className='flex flex-wrap gap-4 pt-6 pb-2'>
+                <div className='flex flex-wrap justify-between gap-4 pt-6 pb-2'>
                     {SECTION_2_CONTENT.map((content, idx) => {
                         return (
                             <div onClick={() => setActive(idx)} key={idx} className={`border-[1px] bg-white ${active == idx ? 'border-pink' : 'border-transparent'}  shadow-xl rounded-lg w-[160px] aspect-square text-center flex flex-col justify-center items-center`}>

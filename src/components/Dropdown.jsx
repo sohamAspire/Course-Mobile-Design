@@ -21,7 +21,7 @@ const Dropdown = ({ options, label, overflow , medium }) => {
 
       {isOpen && (
         <div className="origin-left absolute right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10" role="menu">
-          <ul className={`py-1 ${overflow ? 'h-[80px] overflow-auto' : ''}`} role="none">
+          <ul className={`py-1 ${overflow ? 'h-[110px] overflow-auto' : ''}`} role="none">
             {options.map((option, index) => {
               return (<li
                 key={index}
